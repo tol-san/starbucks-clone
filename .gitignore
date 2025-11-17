@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+
+# Tailwind output CSS
+/dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
