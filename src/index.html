@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abstract</title>
+    <title>Starbucks-clone</title>
     <link rel="stylesheet" href="../dist/output.css" />
     <link
       rel="stylesheet"
@@ -13,55 +13,104 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
     <header>
-      <div class="flex justify-between items-center px-6 py-4 ">
-        <img src="../images/starbucks-logo.svg" alt="Starbucks logo" class="h-10" />
-        <i class="fa-solid fa-bars text-xl"></i>
+      <div class="flex justify-between items-center px-8 py-4">
+        <div class="flex items-center ">
+          <img
+            src="../images/starbucks-logo.svg"
+            alt="Starbucks logo"
+            class="h-14 md:mr-8"
+          />
+          <ul class="hidden md:flex md:space-x-6 md:text-sm md:font-bold">
+            <li class="hover:text-brand-green transition-colors duration-150 ease-in-out"><a href="">MENU</a></li>
+            <li class="hover:text-brand-green transition-colors duration-150 ease-in-out"><a href="">REWARDS</a></li>
+            <li class="hover:text-brand-green transition-colors duration-150 ease-in-out"><a href="">GIFT CARDS</a></li>
+          </ul>
+        </div>
+
+
+        <div class="hidden md:flex">
+          <div class="mr-12 hover:cursor-pointer hover:text-brand-green transition-colors duration-150 ease-in-out">
+            <i class="fa-solid fa-location-dot text-xl mr-2 "></i>
+            <span class="font-medium">Find a store</span>
+          </div>
+          <div class="space-x-4">
+            <button class="px-4 py-1 rounded-2xl border border-black hover:bg-indigo-100 transition-colors duration-300 ease-in-out">
+              Sign in
+            </button>
+            <button
+              class="px-4 py-1 rounded-2xl text-white bg-black hover:bg-opacity-70 border border-black  transition-colors duration-300 ease-in-out"
+            >
+              Join now
+            </button>
+          </div>
+        </div>
+
+        <div class="md:hidden"><i class="fa-solid fa-bars text-2xl"></i></div>
       </div>
     </header>
     <!-- End header -->
-
-    <main>
-      <section>
-        <div class="flex justify-between items-center bg-black px-4 py-2">
-          <div class="uppercase font-bold  text-white">Starbucks® Rewards</div>
-          <button class="border border-white px-4 py-1 rounded-2xl text-white">Join in the app</button>
-        </div>
-      </section>
-      <!-- End -->
-
-      <section class="">
-        <div class="flex flex-col items-center gap-y-6 text-emerald-900 leading-5 bg-purple-50 py-8 ">
-          <div class="text-3xl font-semibold px-28 text-center">It's a great day for free coffee</div>
-          <div class="">
-            Sign up and start enjoying the perks of Starbucks® Rewards.
-          </div>
-          <button class="bg-emerald-700 text-white px-4 py-1 rounded-3xl">Join in the app</button>
-          <a href="#" class="underline" >Or join online</a>
-        </div>
-        <img src="../images/image.png" alt="">
-      </section>
-      <!-- End -->
-
-
-      <div class="flex justify-center items-center flex-col bg-green-300 gap-y-3">
-        <div class="text-2xl font-medium">Getting started is easy</div>
-        <div class="font-light">Earn Stars and get rewarded in a few easy steps.</div>
+  
+  <main>
+    <section>
+      <div class="flex justify-between items-center bg-brand-darkGreen px-4 py-4">
+        <div class="uppercase font-bold  text-white">Starbucks® Rewards</div>
+        <button class="md:hidden border border-white px-4 py-1 rounded-2xl text-white">Join in the app</button>
       </div>
+    </section>
 
-      <div class="flex">
-        <div class="size-12 border-2 border-green-700 text-2xl flex  items-center justify-center rounded-full font-bold">1</div>
 
-        <div class="flex flex-col">
-          <div class="text-lg font-medium">Download the Starbucks® app</div>
-          <p><a href="#" class="underline text-emerald-900">Join in the app</a> to get access to the full range of Starbucks® Rewards benefits. You can also <a href="#" class="underline text-emerald-900">join online.</a></p>
+    <section class="flex flex-col md:flex-row bg-rose-50 md:items-center">
+
+
+
+      <div class="flex flex-col items-center gap-y-6 text-brand-darkGreen leading-5 py-8 mx-auto">
+        <div class="text-3xl font-semibold px-24 text-center lg:text-5xl lg:text-left">It's a great day for free coffee</div>
+        <div class="px-8 text-center lg:text-left">
+          Sign up and start enjoying the perks of Starbucks® Rewards.
         </div>
+        <button class="bg-brand-green text-white px-4 py-2 rounded-3xl">Join in the app</button>
+        <a href="#" class="text-black underline hover:no-underline">Or join online</a>
       </div>
 
 
-    </main>
+      <img src="../images/image.png" alt="" class="md:w-1/2 object-contain mx-auto md:max-h-[480px]">
 
+
+    </section>
+
+<!--
+
+    <div class="flex justify-center items-center flex-col bg-green-300 gap-y-3"> <div class="text-2xl font-medium">Getting started is easy</div>
+      <div class="font-light">Earn Stars and get rewarded in a few easy steps.</div>
+    </div>
+
+
+
+    <div class="flex">
+      <img src="../images/getting-started-1@2x.jpg" class="size-12" alt="">
+
+      <div class="flex flex-col">
+        <div class="text-lg font-medium">
+          Download the Starbucks® app
+        </div>
+        <p>
+          <a href="#" class="underline text-emerald-900">
+            Join in the app</a>
+          to get access to the full range of Starbucks® Rewards benefits. You can also
+          <a href="#" class="underline text-emerald-900">join online.</a>
+        </p>
+      </div>
+
+
+
+  </main>
+
+-->
+
+    <!-- <input type="search" placeholder="search" class="border w-[500px] h-10 rounded-[30px]"> -->
 
   </body>
 </html>
